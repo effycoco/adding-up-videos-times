@@ -199,7 +199,11 @@
     // const h = Math.floor(totalTime / 60 / 60);
     // console.log(`${h}:${m}:${s}`);
     // console.log(totalTime);
-    console.log(new Date(totalTime * 1000).toISOString().substr(11, 8))
+    const hms = new Date(totalTime * 1000).toISOString().substr(11, 8);
+    let li = document.createElement('li');
+    li.appendChild(document.createTextNode(`Total Duration: ${hms}`));
+    const ul = document.querySelector('.videos');
+    ul.appendChild(li);
   </script>
 </body>
 

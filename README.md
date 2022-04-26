@@ -30,7 +30,7 @@ A project from [JavaScript 30 - 18](https://youtu.be/SadWPo2KZWg)
 - 向 ul 元素添加新 li 元素的方法
   ```js
   let li = document.createElement("li");
-  li.appendChild(document.createTextNode(`text content`));
+  li.appendChild(document.createTextNode(`text content`)); // or li.textContent='text content';
   const ul = document.querySelector("ul");
   ul.appendChild(li);
   ```
